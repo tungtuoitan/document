@@ -150,3 +150,63 @@ các composition API
 # alias in expression
 
 # modifiers trong 
+# inline statement trong v-on
+- ví dụ: count++
+<button v-on:click="count++">Click me</button>
+
+# capture mode trong javascript
+- là chế độ mà event được truyền từ element cha sang element con, và handler của element con được thực thi
+
+# alias (trong Vue)
+- là bí danh của 1 hàm / 1 key...
+- ví dụ: .Enter là alias của sự kiện Press Enter key
+
+# passive: true trong v-on
+- https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#passive
+
+# modifiers trong v-on
+- chức năng: bổ sung thuộc tính cho event
+ bao gồm:
+- .stop: dừng bong bóng 
+.prevent: dừng hoạt động default
+.capture: (liên quan đến useCapture trong hàm addEventListener) https://viblo.asia/p/bubbling-va-capturing-event-trong-javascript-phan-2-bJzKmLnO59N
+.self: chỉ kích hoạt handler khi element này là nơi xảy ra sự kiện
+.{keyAlias}: chỉ hoạt động khi có sự kiện tại keyAlias
+.once: chỉ kích hoạt handler max 1 lần
+.left: chỉ kích hoạt khi sự kiện là left mouse event
+.right: chỉ kích hoạt khi sự kiện là right mouse event
+.middle: chỉ kích hoạt khi sự kiện là midde mouse event
+.passive: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#passive
+
+# argument trong v-on
+- argument là đối số của event handler
+- chỉ nhận vào đối tượng event (e)
+
+# native DOM event
+- là các event thông thường như click, hover...
+- để phân biệt với các custom event
+
+
+# Attribute và Property ***** 
+- attribute là thuộc tính của DOM element node
+- property là thuộc tính của đối tượng JS (đại diện cho DOM element node)
+
+- DOM được dùng để biễu diễn file HTML trong trình duyệt
+- Web API cung cấp các đối tượng JS để ta thao tác với DOM
+- mỗi đối tượng JS tương ứng với 1 Node DOM element
+
+- chỉ có một vài attribute là có property tương ứng
+
+- vd: các attribute có property tương ứng
+class --> element.className
+for --> e.htmlFor
+id --> e.id
+src --> e.src
+href --> e.href
+
+- các attribute k có property tương ứng: colspan, rowspan...
+- đối với các attribute k có property tương ứng, ta có thể thao tác với chúng bằng getAttribute() / setAttribute()
+
+# two way binding (trong v-model)
+- là sự đồng bộ giữa UI và data
+- khi UI thay đổi, data thay đổi theo và ngược lại
