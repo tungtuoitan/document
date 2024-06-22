@@ -1,212 +1,50 @@
+# side effect
 
-# directive
-- là thuộc tính đặc biệt
-là short code của các hoạt động thao tác với DOM
-- bắt đầu với v-
+- là những hoạt động trong 1 hàm, nhưng có làm thay đổi something nằm bên ngoài scope của hàm đó
 
-# hàm ref()
-tạo ra 1 đối tượng tham chiếu đến giá trị x >> nhớ đó Vue có thể theo dõi state
-x sẽ được lưu trữ trong thamchieu.value
+- ví dụ:
+- hoạt động thay đổi input của hàm đó
+- call API (vì khi all API)
+- console.log()
+- fetch đến server (vì nó sẽ thêm 1 entry vào log file)
+  [1](https://daveceddia.com/react-redux-immutability-guide/#what-is-immutability)
 
-# lifecycle hook
-là các hàm đặc biệt, >> vì thời điểm thực thi gắn liền với lifecycle
+# tạo ra copy của 1 array
 
-# binding
-- là "gán" các giá trị / thuộc tính của HTML element cho state >> khi state thay đổi thì element sẽ thay đổi theo
-- tức liên kết trạng thái của UI và state với nhau
+let a = [1, 2, 3];
+let copy1 = [...a];
+let copy2 = a.slice();
+let copy3 = a.concat();
+[1](https://daveceddia.com/react-redux-immutability-guide/#what-is-immutability)
 
-# v-bind
-- 
-# v-model
-thay thế cho event của các thẻ trong form
+# các phương thức mutate array
 
+push (add an item to the end)
+pop (remove an item from the end)
+shift (remove an item from the beginning)
+unshift (add an item to the beginning)
+sort
+reverse
+splice
+[1](https://daveceddia.com/react-redux-immutability-guide/#what-is-immutability)
 
-# v-text chức năng ?
-gán state cho textContent
-
-# option API
-là các quy tắc và các hàm để viết component
-## đặc điểm:
-export default 
-đều là thuộc tính trong đối tượng option
-được khai báo riêng biệt trong đối tượng option
-cách viết phức tạp
-
-# ý nghĩa tên option ?
-
-nói đến việc ta có nhiều loại api để dùng cho 1 mục đích,
-ví dụ, muốn tạo ra data cho component, ta có thể dùng data() / prop() / computed
-
-# thuộc tính tính toán / computed property
-là các thuộc tính được tính toán từ các state
-
-# Các option API cụ thể và chức năng
-
-STATE
-data(): tạo reactive state
-thuộc tính props: khai báo props
-thuộc tính computed: định nghĩa các thuộc tính tính toán
-thuộc tính method: định nghĩa các phương thức của component, các phương thức này sẽ được dùng logic của component
-thuộc tính watch: khai báo các callback gắn với sự thay đổi của state
-thuộc tính emmited: khai báo các custom event và handler
-expose: ???
-RENDERING
--template: chứa chuỗi html mở rộng
-render: tạo DOM bằng JS-like syntax
-thẻ slots: cho phép chèn code vào bên trong childComponent
-LIFE CYCLE
-beforeCreate / create
-beforeMount / mounted
-beforeUpdate / update
-beforeUnMounted / unmounted
-errorCaptured
-COMPOSITION
-provide / inject: truyền data từ parent vào child
-mixins: tái sử dụng logic và option bằng cách định nghĩa chúng và áp dụng vào nhiều component
-extends: tạo ra component mới có tất cả options của component cũ, và options riêng
-MISC
-name: đặt tên cho component
-component: đăng kí và khai báo các childcomponent
-directives: đăng kí custom directive
-COMPONENT INSTANCE (đi với this)
-$data: truy cập data của component từ methods
-$props…
-
-mỗi app cần 1 component để chứa các child component
-đối tượng truyền vào createApp là 1 rootComponent
-mỗi component đều là 1 đối tượng
-
-1 website có thể dùng nhiều app instance, nhưng không phổ biến
-phổ biến nhất là: dùng vue để xây dựng SPA và chỉ dùng 1 app
-ngoài ra 1 website còn có thể dùng nhiều framework khác nhau, và dùng vue để xây dựng 1 phần trang web
-
-# các cách viết component
-
-JS module
-FSC
-
-# lợi ích và bất lợi của cách viết FSC và JS module
-
-lợi ích của cách viết fsc:
-hot reloading
-dễ viết dễ đọc
-scoped style
-
-# lợi ích của cách viết js module
-
-hỗ trợ một số tính năng mà sfc k hỗ trợ (vd TypeScript)
-
-# dynamic component
-
-là component có nhiều hơn 1 UI, phụ thuộc vào props truyền vào
-diễn biến createApp()
-tạo app instance
-liên kết với HTML element đã cấu hình
-điều khiển DOM
-theo dõi state và update
-
-# các hoạt động với App
-
-gắn app vào html element / tháo app
-tạo component
-
-# tính năng declarative rendering
-
-- là việc code (mô tả) UI bằng html + state mà k trực tiếp thao tác với DOM>> vì có React, Vue làm việc đó rồi
-- declarative: Mô tả
-- khi dùng JS thuần, thì để UI cập nhật, bắt buộc phải thao tác với DOM
-
-# tính năng reactivity
-
-- là khả năng tự động cập nhật UI khi dữ liệu, trạng thái của ứng dụng thay đổi
-- reactivity có nghĩa là phản ứng: khi state thay đổi, React sẽ "phản ứng" với thay đổi đó
-
-# vue là hệ sinh thái, vậy hệ sinh thái là gì ?
-
-# vue bao hàm gần như toàn bộ các tính năng mà FE cần, vậy toàn bộ các tính năng đó là gì?
-
-# vue rất linh hoạt, linh hoạt chỗ nào?
-
-# built tool enable project là gì? built tool là gì ?
-
-là các dự án được xây dựng bởi built tool
-
-# 2 loại api: option style và composition style
-
-option style: là cách tiếp cận truyền thống
-composition style: là cách tiếp cận linh hoạt hơn, tập trung vào chức năng, có từ Vue3
-
-# composition API
-
-là 1 phần của vue 3
-cú pháp đơn giản
-
-các composition API
+# pure function
+- là hàm thỏa mãn 2 điều kiện:
+- cùng 1 input luôn tạo ra cùng 1 output
+- không có side effect
+https://daveceddia.com/react-redux-immutability-guide/#what-is-immutability
 
 
-# <template>
-- mặc định sẽ có display: none
+# deep copy / deep clone
 
-# alias in expression
+# cách tạo ra deep clone
+- structuredClone()
+- JSON.parse(JSON.stringify(a))
 
-# modifiers trong 
-# inline statement trong v-on
-- ví dụ: count++
-<button v-on:click="count++">Click me</button>
+- lodash.cloneDeep
+- Ramda.clone   
+- jQuery - jQuery.extend(true, { }, oldObject)
 
-# capture mode trong javascript
-- là chế độ mà event được truyền từ element cha sang element con, và handler của element con được thực thi
+ >> dùng spread operator hoặc các phương thức khác rất dễ bị shallow clone 
 
-# alias (trong Vue)
-- là bí danh của 1 hàm / 1 key...
-- ví dụ: .Enter là alias của sự kiện Press Enter key
-
-# passive: true trong v-on
-- https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#passive
-
-# modifiers trong v-on
-- chức năng: bổ sung thuộc tính cho event
- bao gồm:
-- .stop: dừng bong bóng 
-.prevent: dừng hoạt động default
-.capture: (liên quan đến useCapture trong hàm addEventListener) https://viblo.asia/p/bubbling-va-capturing-event-trong-javascript-phan-2-bJzKmLnO59N
-.self: chỉ kích hoạt handler khi element này là nơi xảy ra sự kiện
-.{keyAlias}: chỉ hoạt động khi có sự kiện tại keyAlias
-.once: chỉ kích hoạt handler max 1 lần
-.left: chỉ kích hoạt khi sự kiện là left mouse event
-.right: chỉ kích hoạt khi sự kiện là right mouse event
-.middle: chỉ kích hoạt khi sự kiện là midde mouse event
-.passive: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#passive
-
-# argument trong v-on
-- argument là đối số của event handler
-- chỉ nhận vào đối tượng event (e)
-
-# native DOM event
-- là các event thông thường như click, hover...
-- để phân biệt với các custom event
-
-
-# Attribute và Property ***** 
-- attribute là thuộc tính của DOM element node
-- property là thuộc tính của đối tượng JS (đại diện cho DOM element node)
-
-- DOM được dùng để biễu diễn file HTML trong trình duyệt
-- Web API cung cấp các đối tượng JS để ta thao tác với DOM
-- mỗi đối tượng JS tương ứng với 1 Node DOM element
-
-- chỉ có một vài attribute là có property tương ứng
-
-- vd: các attribute có property tương ứng
-class --> element.className
-for --> e.htmlFor
-id --> e.id
-src --> e.src
-href --> e.href
-
-- các attribute k có property tương ứng: colspan, rowspan...
-- đối với các attribute k có property tương ứng, ta có thể thao tác với chúng bằng getAttribute() / setAttribute()
-
-# two way binding (trong v-model)
-- là sự đồng bộ giữa UI và data
-- khi UI thay đổi, data thay đổi theo và ngược lại
+https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript
