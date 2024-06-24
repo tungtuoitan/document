@@ -12,7 +12,7 @@
 - Redux-toolkit
 - Redux-Devtool Extension
 
-## Lí do ra đời?\*
+## Lí do ra đời?*
 
 - được tạo ra để giải quyết các hạn chế của event-trigger-base state management
 

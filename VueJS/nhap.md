@@ -1,13 +1,4 @@
-# side effect
 
-- là những hoạt động trong 1 hàm, nhưng có làm thay đổi something nằm bên ngoài scope của hàm đó
-
-- ví dụ:
-- hoạt động thay đổi input của hàm đó
-- call API (vì khi all API)
-- console.log()
-- fetch đến server (vì nó sẽ thêm 1 entry vào log file)
-  [1](https://daveceddia.com/react-redux-immutability-guide/#what-is-immutability)
 
 # tạo ra copy của 1 array
 
