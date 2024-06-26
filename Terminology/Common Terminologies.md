@@ -45,3 +45,23 @@
 # escape hatch
 
 # snapshot
+
+# error prone   
+
+# expose
+- xuất biến/type ra ??
+
+# shallow comparison / so sánh nông
+- là so sánh địa chỉ của chúng
+- vd: Object.is() là phép so sánh nông
+
+
+# **No question for thesse**
+
+- redux là 1 sự triển khai của kiến trúc Flux
+- redux là 1 thư viện JS độc lập
+
+# 2
+## Lí do redux ra đời?
+
+- được tạo ra để giải quyết các hạn chế của event-trigger-base state management

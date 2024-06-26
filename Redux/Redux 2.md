@@ -1,34 +1,28 @@
-# 1.TỔNG QUAN
+# 1
 
-## redux là gì?
+# redux là gì?
 
 - là pattern và thư viện dùng để quản lí/update state
-- là 1 sự triển khai của kiến trúc Flux
-- là 1 thư viện JS độc lập
 
-## Hệ sinh thái quanh redux
+# Hệ sinh thái quanh redux?
 
 - React-redux
 - Redux-toolkit
 - Redux-Devtool Extension
 
-## Lí do ra đời?*
-
-- được tạo ra để giải quyết các hạn chế của event-trigger-base state management
-
-## đặc điểm của redux
+# đặc điểm nổi bật của redux ??
 
 - hoạt động update state có thể dự đoán được (Predictable)
 - one-way data flow
 
-## Tradeoff của redux
+# Điểm yếu của redux ?
 
 - phải code nhiều
 - code dài dòng, lê thê
 - nhiều khái niệm mới cần học
-- phải tuân thủ các hạn chế\*
+- phải tuân thủ các hạn chế
 
-## Khi nào nên dùng redux?
+# Khi nào nên dùng redux?
 
 - có 1 lượng lớn state dùng ở nhiều nơi trong app
 - state cần update thường xuyên theo thời gian
@@ -121,20 +115,22 @@ return array.filter((item, index) => index !== action.index)
 }
 
 ## Dùng thư viện để viết immutable update
+
 - có nhiều thư viện dành cho việc này, tìm ở (the Immutable Data#Immutable Update Utilities section of the Redux Addons Catalog)
 
 - Immer:
-var usersState = [{ name: 'John Doe', address: { city: 'London' } }]
-var newState = immer.produce(usersState, draftState => {
+  var usersState = [{ name: 'John Doe', address: { city: 'London' } }]
+  var newState = immer.produce(usersState, draftState => {
   draftState[0].name = 'Jon Doe'
   draftState[0].address.city = 'Paris'
   //nested update similar to mutable way
-}) 
+  })
 
 - dot-prop-immutable
-state = dotProp.set(state, `todos.${index}.complete`, true)
+  state = dotProp.set(state, `todos.${index}.complete`, true)
 
 - dùng RTK
+
 # 3.HOẠT ĐỘNG CỦA REDUX
 
 ## Hoạt động khởi tạo ban đầu
@@ -184,7 +180,6 @@ fourth: action.someValue
 }
 }
 }
-
 
 mutable logic (with RTK)
 function reducerWithImmer(state, action) {

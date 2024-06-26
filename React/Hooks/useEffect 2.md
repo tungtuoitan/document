@@ -33,7 +33,7 @@ _RUN setup in useEffect synchronously khi việc show lastest UI là quan trọn
 # dependency array
 
 - phải chứa tất cả các [reactive value] có trong setup function,
-- react sẽ so sánh các dependency với các giá trị trước đó bằng Object.js()
+- react sẽ so sánh các dependency với các giá trị trước đó bằng Objectijs()
 - khi không cung cấp dependency array, setup sẽ chạy lại sau mỗi lần render
 - khi dependency array [] rỗng, hàm setup chỉ chạy đúng 1 lần
 
