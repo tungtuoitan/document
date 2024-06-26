@@ -39,3 +39,9 @@
 # reactive value
 
 - reactive value có thể là: prop, state, và các biến và các hàm được khai báo trực tiếp trong component
+
+# best practice ??
+
+# escape hatch
+
+# snapshot
