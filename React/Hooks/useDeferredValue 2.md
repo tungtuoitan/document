@@ -20,7 +20,7 @@
 
 ## React xác định input có thay đổi hay không bằng cách nào ?
 
-- React dùng Object.js (tức shallow comparision)
+- React dùng Object.is (tức shallow comparision)
 
 ## syntax
 

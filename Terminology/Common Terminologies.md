@@ -45,3 +45,18 @@
 # escape hatch
 
 # snapshot
+
+# error prone
+
+# expose
+
+- xuất biến/type ra ??
+
+# shallow comparison / so sánh nông
+
+- là so sánh địa chỉ của chúng
+- vd: Object.is() là phép so sánh nông
+
+# refactor
+
+- là việc tái cấu trúc code mà không làm ảnh hưởng đến chức năng

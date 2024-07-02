@@ -13,7 +13,7 @@ const [state, setState] = useState(param)
 # lưu ý khi dùng:
 
 - setState chỉ update state cho next render, nên sau dòng code update, state vẫn mang old value
-- nếu new state giống old state (React so sánh bằng Object.js()) thì component và child sẽ không được render. Mặc dù trong 1 số trường hợp comoponent sẽ được render nhưng child thì không
+- nếu new state giống old state (React so sánh bằng Object.is()) thì component và child sẽ không được render. Mặc dù trong 1 số trường hợp comoponent sẽ được render nhưng child thì không
 
 - event handler run --> queue run để update state --> re-render
 - khi dùng 3 setState(count +1), thì vẫn chỉ tương đương 1 setState(count +1) vì việc việc update state không diễn ra ngay lập tức mà diễn ra sau cùng
