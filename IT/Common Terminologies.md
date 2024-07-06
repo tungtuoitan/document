@@ -9,6 +9,7 @@
 - fetch đến server (vì nó sẽ thêm 1 entry vào log file)
 <!-- SOURCE:  https://daveceddia.com/react-redux-immutability-guide/#what-is-immutability -->
 
+
 ## hiệu ứng "side effect" của 1 hàm
 
 - 1 hàm được gọi là có "side effect" khi có các hoạt động như:
@@ -18,6 +19,8 @@
   thực hiện I/O
 - gọi các hàm có side effect
 
+# expose
+- (v) xuất ra
 # "render"
 
 - là việc thực thi code và trả về JSX
