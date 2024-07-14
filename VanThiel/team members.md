@@ -1,28 +1,39 @@
-# team IT
 
-- Martin 
-<!-- (Head of IT system . có bằng MBA . 6y ở Vanthiel . 2018-2020 làm BI SA) . 40age-->
+<!-- CHƯA ĐẦY ĐỦ -->
+# Ruud Van Thiel (Owner)
+...
+## Martin Hadvin (IT Boss)
 
-- chú Giang (senior PM)
-- Rennel
- <!-- (ERP dev) . ~50age -->
+### Arno (consultant)
 
-- a Thanh (BA)
+### a.Giang (PM)
 
-- a Việt (web dev)
-- a Đức Anh (web dev)
-- a Thiên (web dev)
 
-- chị Uyển 
-<!-- (Senior DB Analysis) -->
-- chị Thơ 
-<!-- (BI dev) . 2y ở Vanthiel -->
-- a Bình 
-<!-- (BI dev) . 30t . 1y ở vanthiel -->
+### Jacob (BA)
+### Renel (FE BE Leader)
+#### Winston (ERP dev)??
+#### c.Đức Anh (dev)
 
-- a Dũng (IT help desk)
+#### a.Việt (dev lâu)
 
-# team HR
+#### a.Thiên (dev mới)
 
-- Ms.Quirine (Employee Relation Manager . 2y)
-- Thủy
+### c.Uyên (Senior DA)
+
+#### a.Bình (BI dev)
+
+#### c.Thơ (BI dev)
+
+
+## Quirine (HR Boss)
+## (Accountant)
+
+## (Designer)
+
+## (autocad)
+
+## (chef)
+
+## (driver)
+
+## ...
