@@ -38,5 +38,3 @@
 (mình học code từ youtube cũng k ổn, học là phải thực hành, còn k là vứt. vậy nên hãy đào sâu vào source code ở cty và học xoay quanh nó)
 
 
-# hiểu bản thân
-- đeo cái kính ngược để gây chú ý (fail)
